@@ -1,0 +1,27 @@
+{
+  "name": "ezpro-cli",
+  "version": "1.0.0",
+  "description": "易科拓展服务通用模块",
+  "main": "./bin/cli.js",
+  "bin": {
+    "ezpro-cli": "./bin/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ezpro"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "David",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^8.2.6",
+    "ora": "^5.4.1"
+  }
+}
