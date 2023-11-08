@@ -28,7 +28,13 @@ async function judgeFile(templateName, downloadUrl) {
       name: "choice",
       message: "目录已存在该通用模块，是否覆盖？",
     });
-    choice ? fs.removeSync(pathUrl) : process.exit(1);
+    if (choice) {
+      fs.rm(pathUrl, { recursive: true }, (err) => {
+        err ? console.log("目录覆盖失败", err) : "";
+      });
+    } else {
+      process.exit(1);
+    }
   }
   await downTemplate(downloadUrl, pathUrl);
 }

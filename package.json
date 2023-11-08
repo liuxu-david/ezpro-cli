@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "易科拓展服务通用模块",
   "main": "./bin/cli.js",
-  "bin": {
-    "ezpro-cli": "./bin/cli.js"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,7 +11,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/liuxu-david/ezpro-cli"
   },
   "author": "David",
   "license": "ISC",
